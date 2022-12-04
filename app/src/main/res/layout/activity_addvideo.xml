@@ -17,23 +17,24 @@
      />
 
     <Button
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/videoView"
         android:id="@+id/browse"
         android:layout_width="265dp"
         android:layout_height="63dp"
-        android:text="Browse Video"
-        android:textSize="18sp"
+        android:layout_below="@id/videoView"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-       />
+        android:text="Browse Video"
+        android:textSize="18sp" />
 
     <Button
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/browse"
         android:id="@+id/upload"
-        android:layout_marginTop="10dp"
         android:layout_width="265dp"
         android:layout_height="63dp"
+        android:layout_below="@id/browse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
         android:layout_marginBottom="220dp"
         android:text="Upload Video"
         android:textSize="18sp" />
