@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity
     public void singup(View view)
     {
         bar.setVisibility(View.VISIBLE);
-
         String email=t1.getEditText().getText().toString();
         String password=t2.getEditText().getText().toString();
 

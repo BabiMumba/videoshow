@@ -74,6 +74,7 @@
             android:layout_marginBottom="10dp"
             android:background="@color/buttonbg"
             android:fontFamily="sans-serif-condensed"
+            android:onClick="singup"
             android:text="SUBMIT"
             android:textColor="#000"
             android:textSize="25sp" />
@@ -113,6 +114,7 @@
         android:textColor="#000"
         android:layout_height="36dp"
         android:text="Already Registered ?"
+        android:onClick="gotosignin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

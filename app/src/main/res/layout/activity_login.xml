@@ -74,7 +74,8 @@
             android:onClick="signinhere"
             android:text="LOGIN"
             android:textColor="#000"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="UsingOnClickInXml" />
 
     </LinearLayout>
 
