@@ -20,7 +20,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".vide.StremActivity"
+            android:name=".vide.ShowVideoActivity"
             android:exported="false" />
         <activity
             android:name=".addvideo"
@@ -32,7 +32,7 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".vide.ShowVideoActivity"
+            android:name=".vide.StremActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
