@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -25,13 +26,16 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
 
+        check_user();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         t1=(TextInputLayout)findViewById(R.id.email);
         t2=(TextInputLayout)findViewById(R.id.pwd);
         bar=(ProgressBar)findViewById(R.id.progressBar3);
-        mAuth = FirebaseAuth.getInstance();
+
+
     }
 
     public void gotosignin(View view)
@@ -42,7 +46,6 @@ public class MainActivity extends AppCompatActivity
     public void singup(View view)
     {
         bar.setVisibility(View.VISIBLE);
-
         String email=t1.getEditText().getText().toString();
         String password=t2.getEditText().getText().toString();
 
@@ -77,5 +80,19 @@ public class MainActivity extends AppCompatActivity
             bar.setVisibility(View.INVISIBLE);
             Toast.makeText(getApplicationContext(),"Please input valid data",Toast.LENGTH_LONG).show();
         }
+
+    }
+
+    public void check_user(){
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null){
+            Intent intent=new Intent(this,dashboard.class);
+            intent.putExtra("email",mAuth.getCurrentUser().getEmail());
+            intent.putExtra("uid",mAuth.getCurrentUser().getUid());
+            startActivity(intent);
+        }else {
+
+        }
+
     }
 }
