@@ -56,7 +56,7 @@ public class login extends AppCompatActivity {
                             bar.setVisibility(View.INVISIBLE);
                             t1.getEditText().setText("");
                             t2.getEditText().setText("");
-                            Toast.makeText(getApplicationContext(),"Invalid email/password",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),task.toString(),Toast.LENGTH_LONG).show();
                         }
 
                         // ...
