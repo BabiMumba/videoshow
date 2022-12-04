@@ -10,7 +10,6 @@
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:videoId="nY9ZrI7frb8"
         app:autoPlay="true" />
 
 </LinearLayout>
