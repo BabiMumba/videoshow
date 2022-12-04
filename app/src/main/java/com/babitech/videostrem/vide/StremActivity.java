@@ -24,10 +24,10 @@ public class StremActivity extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "-DbbBxsrwiQ";
+                String videoId = "9sE5kEnitqE";
+
                 DefaultPlayerUiController defaultPlayerUiController = new DefaultPlayerUiController(youTubePlayerView, youTubePlayer);
                 youTubePlayerView.setCustomPlayerUi(defaultPlayerUiController.getRootView());
-
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
