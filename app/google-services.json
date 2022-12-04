@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "122162267028",
+    "project_id": "videoshow-6801b",
+    "storage_bucket": "videoshow-6801b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122162267028:android:9b54862f8e29750dc00581",
+        "android_client_info": {
+          "package_name": "com.babitech.videostrem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122162267028-cb7ndd7vc3t05kdjpo9qhphjoh3qnsvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO1Ye70nSqsXqEPM-XV1Zwt8y9Ptc2yhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122162267028-cb7ndd7vc3t05kdjpo9qhphjoh3qnsvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
