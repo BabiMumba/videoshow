@@ -22,9 +22,10 @@ public class ShowVideoActivity extends AppCompatActivity {
         videoView = findViewById(R.id.vide_view);
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
-
-        Uri uri = Uri.parse("");
+        String lien = "https://firebasestorage.googleapis.com/v0/b/videoshow-6801b.appspot.com/o/myvideos%2F1670119056829.mp4?alt=media&token=55180769-ad0a-401a-a0fd-ba9b2bd0905f";
+        Uri uri = Uri.parse(lien);
         videoView.setVideoURI(uri);
+        videoView.requestFocus();
         videoView.start();
 
 

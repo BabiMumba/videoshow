@@ -17,7 +17,7 @@
         android:theme="@style/Theme.VideoStrem"
         tools:targetApi="31">
         <activity
-            android:name=".vide.ShowVideoActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".vide.StremActivity"
@@ -32,7 +32,7 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".vide.ShowVideoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
