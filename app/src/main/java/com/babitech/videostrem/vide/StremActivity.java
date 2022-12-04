@@ -8,6 +8,7 @@ import com.babitech.videostrem.R;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.ui.DefaultPlayerUiController;
 
 public class StremActivity extends AppCompatActivity {
 
@@ -23,11 +24,13 @@ public class StremActivity extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "VLA6biZDTx0";
+                String videoId = "-DbbBxsrwiQ";
+                DefaultPlayerUiController defaultPlayerUiController = new DefaultPlayerUiController(youTubePlayerView, youTubePlayer);
+                youTubePlayerView.setCustomPlayerUi(defaultPlayerUiController.getRootView());
+
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
-
-
     }
+
 }
